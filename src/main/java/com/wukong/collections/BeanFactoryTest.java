@@ -11,6 +11,7 @@ public class BeanFactoryTest {
     public static void main(String[] args) {
         BeanFactory bf = new XmlBeanFactory(new ClassPathResource("beanFactoryTest.xml"));
         MyTestBean bean = bf.getBean("myTestBean", MyTestBean.class);
+        bean.sayHello();bean.sayHello();
         bean.sayHello();
 
     }
